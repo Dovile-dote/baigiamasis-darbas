@@ -1,0 +1,10 @@
+$banana: #ff3535;
+
+h1 {
+  display: flex;
+  justify-content: center;
+
+  span {
+    color: $banana;
+  }
+}
