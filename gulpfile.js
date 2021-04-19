@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
-gulp.task('serve', gulp.series(function(done) {
+gulp.task('serve', gulp.series(function (done) {
 
     browserSync.init({
         server: {
@@ -11,22 +11,22 @@ gulp.task('serve', gulp.series(function(done) {
         }
     });
 
-    gulp.watch("scss/*.scss", gulp.series('sass'));
+    gulp.watch("scss/**/*.scss", gulp.series('sass'));
     gulp.watch("*.html").on('change', browserSync.reload);
 
     done();
 }));
 
 
-gulp.task('sass', gulp.series(function(done) {
-	return gulp.src('scss/style.scss')
-		.pipe(sass({
-			outputStyle: 'compressed'
-		}))
+gulp.task('sass', gulp.series(function (done) {
+    return gulp.src('scss/style.scss')
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }))
         .pipe(autoprefixer())
-		.pipe(gulp.dest('./'))
+        .pipe(gulp.dest('./'))
         .pipe(browserSync.stream());
-        done();
+    done();
 }));
 
 gulp.task('default', gulp.parallel('serve', function () {

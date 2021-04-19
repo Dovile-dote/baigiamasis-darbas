@@ -1,10 +1,5 @@
-$banana: #ff3535;
-
-h1 {
-  display: flex;
-  justify-content: center;
-
-  span {
-    color: $banana;
-  }
+:root {
+  --black: #1c1c1c;
 }
+
+@import "components/header.scss"
