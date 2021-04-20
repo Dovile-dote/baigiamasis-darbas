@@ -4,5 +4,23 @@ header {
     left: 0;
     width: 100%;
     background-color: var(--dark);
-    z-index: 1;
+    z-index: 2;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
