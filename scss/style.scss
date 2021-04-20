@@ -1,5 +1,14 @@
 :root {
-  --black: #1c1c1c;
+  --dark: #1c1c1c;
 }
 
-@import "components/header.scss"
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+@import "components/header.scss";
+@import "components/hero.scss";

@@ -1,7 +1,8 @@
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--dark);
+    z-index: 1;
 }
