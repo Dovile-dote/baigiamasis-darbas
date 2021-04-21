@@ -1,0 +1,29 @@
+.reviews-section {
+    padding: 70 px 0;
+    width: 100%;
+    // height: 800px;
+    background: var(--dark);
+
+    h2 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    }
+
+    .reviews-swiper {
+        width: 100%;
+        // height: 800px;
+        background-color: aquamarine;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 70px 0px;
+    }
+}
+// 18paskaitos 1.11.50 apie burbuliuku stilizavima

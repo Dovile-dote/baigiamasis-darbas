@@ -11,16 +11,79 @@ header {
         justify-content: space-between;
     }
 
-    ul {
-        display: flex;
+    .logo {
+        position: relative;
+        z-index: 1;
+    }
 
-        li {
-            list-style: none;
+    nav {
+        @media(max-width: 700px) {
+           position: fixed; 
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100vh;
+           background: var(--dark);
+           display: flex;
+           align-items: center; 
+           justify-content: center;
+           opacity: 0;
+           visibility: hidden;
+        //    kad nereaguotu i pointereventus
+           transition: 0.3s ease-in-out;
         }
 
-        a {
-            color: #fff;
-            text-decoration: none;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ul {
+            display: flex;
+
+            @media (max-width: 700px) {
+                flex-direction: column;
+                text-align: center;
+                padding: 0;
+            }
+ 
+            li {
+                list-style: none;
+                font-size: 14px;
+
+                &:not(:last-child) {
+                    margin-right: 45px;
+
+                    @media (max-width: 700px) {
+                        margin-right: 0;
+                        margin-bottom: 40px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .menu-icon {
+        position: relative;
+        display: none;
+        width: 25px;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+
+        &.active {
+            transform: rotate(90deg);
+            background-color: rgb(219, 88, 36);
+        }
+
+        @media(max-width: 700px) {
+            display: inline-block;
         }
     }
 }
