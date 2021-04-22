@@ -6,8 +6,8 @@ document.getElementById('mobile-menu-trigger').addEventListener('click', functio
 
 // tab navigation 
 
-let tabNavigationBlocks = document.querySelectorAll('.tab-section nav ul li');
-let tabContentBlocks = document.querySelectorAll('.tab-section .tab-content')
+let tabNavigationBlocks = document.querySelectorAll('.tab nav ul li');
+let tabContentBlocks = document.querySelectorAll('.tab .tab-content')
 
 function removeActiveNavigation() {
     for (let tab of tabNavigationBlocks) {
@@ -31,7 +31,7 @@ for (let tab of tabNavigationBlocks) {
 
         let index = this.dataset.slide;
 
-        document.querySelector('.tab-section .tab-content[data-slide="' + index + '"]').classList.add('active');
+        document.querySelector('.tab .tab-content[data-slide="' + index + '"]').classList.add('active');
 
         // swiper.slideTo(index - 1);
         // su situo reguliuojasi apatinis swiperis. reiktu nauja pasikurt
