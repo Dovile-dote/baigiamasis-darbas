@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Cheshire County</title>
@@ -43,19 +44,64 @@
         <section class="hero" id="hero">
             <img class="hero-image" src="images/hero.jpg" alt="">
             <div class="hero-content container">
-                <h1>Hello world</h1>
-                <h1>Hello world</h1>
-                <h1>jhkjahgkgh</h1>
-                <h1>gsh</h1>
-                <h1>alkghjlk</h1>
-                <h1>jhajkghlghjlghlghlkgh</h1>
+                <div>
+                    <img src="images/logo.svg" alt="Cheshire County">
+                    <h1>
+                        Explained propriety of out perpetual to you
+                    </h1>
+                    <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any
+                        engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met
+                        you.
+                        We so entreaties cultivated astonished is.</p>
+                    <button>DOWNLOAD</button>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <h4>Type of subscription</h4>
+                        <div class="custom-radio">
+                            <input type="radio" name="subscription" id="monthly">
+                            <label for="monthly">
+                                <div class="radio"></div>
+                                <span>Monthly</span>
+                            </label>
+                        </div>
+                        <div class="custom-radio">
+                            <input type="radio" name="subscription" id="yearly">
+                            <label for="yearly">
+                                <div class="radio"></div>
+                                <span>Yearly</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="tab-section">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="active" data-slide="1" data-aos="fade-in"><span>Register</span></li>
+                        <li data-slide="2" data-aos="fade-in"><span>Apply</span></li>
+                        <li data-slide="3" data-aos="fade-in"><span>Receive</span></li>
+                    </ul>
+                </nav>
+                <div class="tab-content active" data-slide="1">
+                    <h2>Tab content 1</h2>
+                </div>
+                <div class="tab-content" data-slide="2">
+                    <h2>Tab content 2</h2>
+                </div>
+                <div class="tab-content" data-slide="3">
+                    <h2>Tab content 3</h2>
+                </div>
             </div>
         </section>
         <section class="custom-section" id="features">
             <div class="container">
                 <div class="content">
                     <h1>Hello world</h1>
-                    <h1>Hello world</h1>
+                    <h1 data-aos="flip-down" data-aos-once="false">Hello world</h1>
                     <h1>jhkjahgkgh</h1>
                     <h1>gsh</h1>
                     <h1>alkghjlk</h1>
@@ -181,6 +227,10 @@
 
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 

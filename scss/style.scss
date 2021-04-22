@@ -1,5 +1,9 @@
 :root {
   --dark: #1c1c1c;
+  --white: #F5F5F5;
+  --green: #41D395;
+  --orange: #E27866;
+  --blue: #6696E2;
 }
 
 html {
@@ -22,3 +26,5 @@ body {
 @import "components/hero";
 @import "components/custom-section";
 @import "components/reviews-section";
+@import "components/form";
+@import "components/tab-section";
