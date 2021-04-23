@@ -1,3 +1,97 @@
 .pricing-section {
     background: var(--blue);
+    // display: flex;
+    text-align: center;
+    color: white;
+
+    h1 {
+       text-transform: uppercase;
+       position: relative;
+       margin: 0 auto 50px;
+
+       &:after {
+        content: '';
+        position: absolute;
+        width: 64px;
+        height: 2px;
+        background: var(--green);
+        bottom: -20px;
+        left:0;
+        right: 0;
+        margin: 0 auto;
+        }
+    }
+    
+    .container {
+     padding-top: 97px;
+     padding-bottom: 108px;
+    }
+
+    .prices-container {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+        
+        .price-card {
+            width: 343px;
+           
+
+            .price {
+                background: var(--dark);
+                // height: 210px;
+                border-radius: 5px 5px 0 0;
+
+                h5 {
+                    font-weight: lighter;
+                    font-size: 20px;
+                    padding-top: 16px;
+                    margin-bottom: 13px;
+                }
+
+
+                h2 {
+                    font-size: 94px;
+                    margin: 0;
+                    font-weight: lighter;
+                    margin-bottom: 5px;
+                    
+                        span {
+                            font-size: 47px;
+                        }                  
+                    }
+
+                p {
+                    opacity: 0.5;
+                    padding-top: 15px;
+                    padding-bottom: 19px;
+                    margin: 0;
+                    text-transform: none;
+                }
+            }
+
+            .green-line {
+                background: var(--green);
+                border: 3px solid var(--green);
+                }
+            
+            p {
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-top: 15px;
+            }
+
+            .price-description {
+                background: white;
+                color: #86878B;
+                border-radius: 0 0 5px 5px;
+                margin: 0;
+
+                p {
+                    margin: 0;
+                    padding: 11px;
+                }
+            }
+        }
+    }
 }
