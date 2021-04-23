@@ -1,3 +1,61 @@
 .features-section {
     background: var(--dark);
+    
+    .content {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 389px;
+        }
+
+        .text-block {
+            max-width: 450px;
+            font-size: 14px;
+            margin: 90px auto;
+
+            h2 {
+                font-size: 30px;
+                position: relative;
+                margin-bottom: 56px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 200px;
+                    height: 2px;
+                    background: var(--orange);
+                    bottom: -27px;
+                    left:0;
+                    }
+            }
+
+            .something {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h5 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .orange-bubble {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--orange);
+        margin-right: 20px;
+
+
+        img {
+            margin: 16px 12px;
+            width: 27px;
+            height: 18px;
+        }
+    }
 }

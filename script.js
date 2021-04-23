@@ -60,9 +60,9 @@ const swiper = new Swiper('.reviews-swiper', {
         }
     },
 
-    // autoplay: {
-    //     delay: 3000,
-    // },
+    autoplay: {
+        delay: 3000,
+    },
 
     // Optional parameters
     // direction: 'vertical',
