@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cheshire County</title>
 </head>
@@ -57,58 +59,68 @@
                 </div>
                 <div class="form-container">
                     <form>
-                        <h4>Type of subscription</h4>
-                        <div class="custom-radio">
-                            <input type="radio" name="subscription" id="monthly">
-                            <label for="monthly">
-                                <div class="radio"></div>
-                                <span>Monthly</span>
-                            </label>
-                        </div>
-                        <div class="custom-radio">
-                            <input type="radio" name="subscription" id="yearly">
-                            <label for="yearly">
-                                <div class="radio"></div>
-                                <span>Yearly</span>
-                            </label>
-                        </div>
+                        <h3>Try Your <span>FREE</span> Trial Today</h3>
+                        <fieldset>
+                            <legend>Your details</legend>
+                            <input type="text" id="first_name" placeholder="First name"></label>
+                            <input type="text" id="last_name" placeholder="Last name">
+                            <input type="tel" id="phone_number" placeholder="Phone number">
+                            <h4>Type of subscription</h4>
+                            <div class="radio-flex">
+                                <div class="custom-radio">
+                                    <input type="radio" name="subscription" id="monthly">
+                                    <label for="monthly">
+                                        <div class="radio"></div>
+                                        <span>Monthly</span>
+                                    </label>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" name="subscription" id="yearly">
+                                    <label for="yearly">
+                                        <div class="radio"></div>
+                                        <span>Yearly</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="submit" class="green" value="GET STARTED">
+                        </fieldset>
                     </form>
                 </div>
             </div>
-            <nav class="container">
-                <!-- <div class="container"> -->
-                <div>
-                    <h3>Social Media</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+            <nav class="social-nav">
+                <div class="container">
+                    <div>
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/facebook-logo.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/instagram-logo.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/twitter.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pinterest.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/wi-fi.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/facebook-logo.svg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/instagram-logo.svg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/twitter.svg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/pinterest.svg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/wi-fi.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-                <!-- </div> -->
             </nav>
         </section>
         <section class="tab">
