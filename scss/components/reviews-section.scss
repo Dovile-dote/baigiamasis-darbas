@@ -2,28 +2,86 @@
     padding: 70 px 0;
     width: 100%;
     // height: 800px;
-    background: var(--white);
 
-    h2 {
+
+    h1 {
+    position: relative;
     margin: 0;
     text-align: center;
-    color: #fff;
+    color: var(--dark);
     text-transform: uppercase;
+    margin-top: 67px;
+    margin-bottom: 90px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 64px;
+        height: 2px;
+        background: var(--blue);
+        bottom: -31px;
+        left:0;
+        right: 0;
+        margin: 0 auto;
+        }
     }
 
     .reviews-swiper {
         width: 100%;
         // height: 800px;
-        // background-color: aquamarine;
+        
+        .swiper-wrapper {
+            display: flex;
+            // justify-content: center;
+            align-items: flex-end;
+        }
     }
 
     .swiper-slide {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         box-sizing: border-box;
-        padding: 70px 0px;
+        padding: 70px 0;
+
+        .opinion {
+            background: var(--blue);
+            color: white;
+            width: 273px;
+            border-radius: 5px;
+            padding: 20px 22px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .person {
+            display: flex;
+
+            h3 {
+                font-size: 20px;
+                font-weight: lighter;
+                margin-left: 17px;
+                margin-bottom: 4px;
+            }
+
+            img {
+                margin-top: 19px;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+
+            p {
+                color: #86878B;
+                font-size: 14px;
+                margin-left: 13px;
+                margin-top: 0;
+            }
+
+        }
     }
 }
 // 18paskaitos 1.11.50 apie burbuliuku stilizavima
