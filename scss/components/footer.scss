@@ -12,6 +12,11 @@ footer {
         ul {
             display: flex;
             list-style: none;
+            margin: 0;
+
+            li {
+                margin-right: 115px;
+            }
         }
 
         p {

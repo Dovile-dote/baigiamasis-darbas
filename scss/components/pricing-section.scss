@@ -3,11 +3,13 @@
     // display: flex;
     text-align: center;
     color: white;
+    
 
     h1 {
        text-transform: uppercase;
        position: relative;
        margin: 0 auto 50px;
+       font-size: 36px;
 
        &:after {
         content: '';
@@ -83,7 +85,7 @@
 
             .price-description {
                 background: white;
-                color: #86878B;
+                color: var(--grey);
                 border-radius: 0 0 5px 5px;
                 margin: 0;
 

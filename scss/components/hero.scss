@@ -1,9 +1,7 @@
 .hero {
     position: relative;
     height: 100vh;
-    // background: red;
-    // border: 4px solid green;
-
+    
     &:after,
     &-image {
         position: absolute;
@@ -25,7 +23,7 @@
 
     .hero-content {
         position: relative;
-        color: var(--white);
+        color: white;
         z-index: 1;
         display: flex;
         align-items: flex-start;
@@ -52,7 +50,7 @@
             &:after {
                 content: '';
                 position: absolute;
-                width: 84px;
+                width: 70px;
                 height: 2px;
                 background: white;
                 bottom:-30px;
@@ -80,8 +78,8 @@
         width: 100%;
         background: white;
         position: absolute;
-        // top: 0;
-        // left: 0;
+        bottom: 0;
+        left: 0;
         z-index: 1;
         // display: flex;
         // align-content: center;
@@ -93,13 +91,28 @@
             justify-content: space-between;
         }
 
+        h3 {
+            font-size: 20px;
+            margin: 0;
+            margin-top: 19px;
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--grey);
+            margin-bottom: 19px;
+            margin-top: 5px;
+            max-width: 395px;
+        }
+
         ul {
             display: flex;
             list-style: none;
+            margin-top: 38px;
             
-            // li:not(:last-child) {
-            //     margin-right: 45px; 
-            // }
+            li:not(:last-child) {
+                margin-right: 105px; 
+            }
         }
     }
 }

@@ -9,17 +9,20 @@
 
         img {
             width: 389px;
+            margin-right: 167px;
+            margin-left: 60px;
         }
 
         .text-block {
             max-width: 450px;
             font-size: 14px;
-            margin: 90px auto;
+            margin: 90px 0;
 
             h2 {
                 font-size: 30px;
                 position: relative;
                 margin-bottom: 56px;
+                max-width: 314px;
 
                 &:after {
                     content: '';

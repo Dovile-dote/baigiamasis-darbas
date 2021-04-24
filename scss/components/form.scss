@@ -17,7 +17,7 @@
         // margin: 0 auto;
         color: var(--dark);
         font-weight: bold;
-        background-color: var(--white);
+        background-color: white;
 
         span {
             color: var(--orange);
@@ -44,7 +44,7 @@
             border-top-color: transparent;
             border-left-color: transparent;
             border-right-color: transparent;
-            border-bottom-color: var(--white);
+            border-bottom-color: var(--grey);
         }
 
         .radio-flex {
@@ -64,6 +64,7 @@
             text-transform: uppercase;
             font-weight: bolder;
             font-size: 9px;
+            opacity: 0.5;
 
             .radio {
                 position: relative;
@@ -102,7 +103,7 @@
             display: none;
 
             &:checked + label {
-                background: red;
+                opacity: 1;
 
                 .radio {
                     opacity: 1;
