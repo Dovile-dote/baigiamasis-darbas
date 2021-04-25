@@ -8,6 +8,10 @@ footer {
         align-content: center;
         justify-content: space-between;
         padding-top: 50px;
+
+        @media(max-width: 600px) {
+            flex-direction: column;
+        }
         
 
         ul {
@@ -15,8 +19,16 @@ footer {
             list-style: none;
             margin: 0;
 
+            @media(max-width: 600px) {
+                padding-left: 0;
+            }
+
             li {
                 margin-right: 115px;
+
+                @media(max-width: 600px) {
+                    margin-right: 20px;
+                }
             }
         }
 

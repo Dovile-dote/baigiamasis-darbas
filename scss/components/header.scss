@@ -19,7 +19,7 @@ header {
     }
 
     nav {
-        @media(max-width: 700px) {
+        @media(max-width: 1000px) {
            position: fixed; 
            top: 0;
            left: 0;
@@ -44,7 +44,7 @@ header {
             display: flex;
             margin-top: 27px;
 
-            @media (max-width: 700px) {
+            @media (max-width: 1000px) {
                 flex-direction: column;
                 text-align: center;
                 padding: 0;
@@ -57,7 +57,7 @@ header {
                 &:not(:last-child) {
                     margin-right: 45px;
 
-                    @media (max-width: 700px) {
+                    @media (max-width: 1000px) {
                         margin-right: 0;
                         margin-bottom: 40px;
                         font-size: 16px;
@@ -107,7 +107,7 @@ header {
             background-color: rgb(219, 88, 36);
         }
 
-        @media(max-width: 700px) {
+        @media(max-width: 1000px) {
             display: inline-block;
         }
     }

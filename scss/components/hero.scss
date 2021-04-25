@@ -2,6 +2,10 @@
     position: relative;
     height: 100vh;
     
+    @media(max-width: 1000px) {
+        height: auto;
+    }
+    
     &:after,
     &-image {
         position: absolute;
@@ -32,6 +36,13 @@
         padding-top: 65px;
         padding-bottom: 140px;
 
+        @media(max-width: 1000px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         div {
             max-width: 651px;
         }
@@ -55,6 +66,12 @@
                 background: white;
                 bottom:-30px;
                 left:0;
+
+                @media(max-width: 1000px) {
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
             }
         }
 
@@ -85,10 +102,19 @@
         // align-content: center;
         // justify-content: space-between;
 
+        @media(max-width: 1000px) {
+            position: relative;
+        }
+
         .container {
             display: flex;
             align-content: center;
             justify-content: space-between;
+
+            @media(max-width: 1000px) {
+                flex-direction: column;
+                transform: scale(0.9);
+            }
         }
 
         h3 {
@@ -109,6 +135,12 @@
             display: flex;
             list-style: none;
             margin-top: 38px;
+
+            @media(max-width: 1000px) {
+                padding: 0;
+                margin: 0;
+                margin-bottom: 20px;
+            }
             
             li:not(:last-child) {
                 margin-right: 105px; 
@@ -117,6 +149,10 @@
             img {
                 height: 30px;
                 opacity: 0.65;
+
+                // @media(max-width: 700px) {
+                //     height: 20px;
+                // }
 
                 &:hover {
                     opacity: 1;
