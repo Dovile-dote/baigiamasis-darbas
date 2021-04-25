@@ -111,8 +111,10 @@ header {
         transition: 0.3s ease-in-out;
 
         &.active {
-            transform: rotate(90deg);
-            background-color: rgb(219, 88, 36);
+            transform: skewX(-50deg) scale(1.1);
+            box-shadow: 1px 2px 1px var(--orange);
+            // transform: rotate(90deg);
+            // background-color: rgb(219, 88, 36);
         }
 
         @media(max-width: 1000px) {

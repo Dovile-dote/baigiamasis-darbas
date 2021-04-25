@@ -53,6 +53,7 @@
         }
 
         input {
+            position: relative;
             font-size: 12px;
             padding: 6px;
             border-top-color: transparent;
@@ -68,6 +69,10 @@
             }
         }
 
+        .red::placeholder {
+            color: red;
+        }
+
         h4 {
             font-size: 16px;
             margin-top: 2.5px;
@@ -77,6 +82,16 @@
         .radio-flex {
             display: flex;
             // margin-bottom: 0px;
+            .ok {
+                opacity: 0;
+            }
+
+            .okok {
+                opacity: 1;
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--green);
+            }
         }
     }
 
@@ -103,6 +118,10 @@
                 border: 1px solid var(--green);
                 opacity: 0.5;
                 transition: 0.3s ease-in-out;
+
+                &.red {
+                    border: 1px solid red;
+                }
 
                 &:after {
                     content: "";
@@ -150,7 +169,7 @@
         height: 57px;
         background: var(--green);
         color:white;
-        bottom: -87px;
+        bottom: -84px;
         left: 0;
         border-radius: 0px 0px 5px 5px;
         border: none;

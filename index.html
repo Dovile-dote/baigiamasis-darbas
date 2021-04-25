@@ -21,7 +21,7 @@
                 <img src="images/logo.svg" alt="Cheshire County">
             </a>
             <nav id="navigation">
-                <ul>
+                <ul id="ul">
                     <li>
                         <a href="#features">Features</a>
                     </li>
@@ -62,7 +62,7 @@
                         <h3>Try Your <span>FREE</span> Trial Today</h3>
                         <fieldset>
                             <legend>Your details</legend>
-                            <input type="text" id="first_name" placeholder="First name"></label>
+                            <input id="first_name" type="text" placeholder="First name">
                             <input type="text" id="last_name" placeholder="Last name">
                             <input type="tel" id="phone_number" placeholder="Phone number">
                             <h4>Type of subscription</h4>
@@ -81,8 +81,9 @@
                                         <span>Yearly</span>
                                     </label>
                                 </div>
+                                <div class="ok"><span>SENT!</span></div>
                             </div>
-                            <input type="submit" class="green" value="GET STARTED">
+                            <input type="submit" class="green" value="GET STARTED" id="send">
                         </fieldset>
                     </form>
                 </div>
