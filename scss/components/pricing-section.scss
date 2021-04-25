@@ -9,7 +9,6 @@
        text-transform: uppercase;
        position: relative;
        margin: 0 auto 50px;
-       font-size: 36px;
 
        &:after {
         content: '';
@@ -43,9 +42,9 @@
         .price-card {
             width: 343px; 
 
-            // @media(max-width: 700px) {
-            //     display: flex;
-            // }
+            @media(max-width: 600px) {
+                transform:scale(0.8);
+            }
            
 
             .price {
@@ -87,7 +86,6 @@
                 }
             
             p {
-                font-size: 14px;
                 text-transform: uppercase;
                 margin-top: 15px;
             }

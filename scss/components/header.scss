@@ -7,15 +7,23 @@ header {
     background-color: var(--dark);
     z-index: 2;
 
+
+  @media(max-width: 600px) {
+    width: 100vw;
+  }
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-align: center;
+        max-height: 72px;
     }
 
     .logo {
         position: relative;
         z-index: 1;
+        margin-top: 10px;
     }
 
     nav {

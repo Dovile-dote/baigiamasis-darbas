@@ -8,15 +8,10 @@
     position: relative;
     margin: 0;
     text-align: center;
-    font-size: 36px;
     color: var(--dark);
     text-transform: uppercase;
     margin-top: 67px;
     margin-bottom: 90px;
-
-    @media(max-width: 1000px) {
-        font-size: 30px;
-    }
 
     &:after {
         content: '';
@@ -51,6 +46,7 @@
             display: flex;
             // justify-content: center;
             align-items: flex-end;
+            height: auto;
         }
     }
 
@@ -117,7 +113,6 @@
 
             p {
                 color: #86878B;
-                font-size: 14px;
                 margin-left: 13px;
                 margin-top: 0;
             }
