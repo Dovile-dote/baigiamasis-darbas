@@ -6,6 +6,27 @@
     position: relative;
     margin-top: 75px;
 
+    &::after {
+        content: 'SENT!';
+        position: absolute;
+        color: var(--green);
+        font-size:  70px;
+        font-weight: bold;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto auto;
+        transform: rotate(-45deg) translateX(-30px);
+        opacity: 0;
+    }
+
+    &.okok::after {
+        opacity: 1;
+    }
+
 
     @media(max-width: 600px) {
         width: 250px;
@@ -45,7 +66,6 @@
         margin: 0px 50px;
         padding: 0;
 
-
         legend {
             font-size: 16px;
             font-weight: bold;
@@ -82,16 +102,13 @@
         .radio-flex {
             display: flex;
             // margin-bottom: 0px;
-            .ok {
-                opacity: 0;
-            }
+            // .ok {
+            //     opacity: 0;
+            // }
 
-            .okok {
-                opacity: 1;
-                font-size: 18px;
-                font-weight: bold;
-                color: var(--green);
-            }
+            // .okok {
+            //     opacity: 1;
+            // }
         }
     }
 

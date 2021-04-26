@@ -15,25 +15,20 @@ let sendButton = document.getElementById('send');
 let firstName = document.getElementById('first_name');
 let lastName = document.getElementById('last_name');
 let phoneNumber = document.getElementById('phone_number');
-let rezultatas = document.querySelector('.ok');
-
-
-
-console.log(firstName);
-console.log(rezultatas);
-console.log(lastName);
-
+let radioMonthly = document.getElementById('monthly');
+let rezultatas = document.getElementById('first-form');
 
 
 sendButton.addEventListener('click', function () {
     console.log(firstName.value);
 
-    if (firstName.value.trim() && lastName.value.trim() && Number(phoneNumber.value)) {
+    if (firstName.value.trim() && lastName.value.trim() && Number(phoneNumber.value) && Boolean(radioMonthly.value = true)) {
         // console.log(firstName.value);
         rezultatas.classList.add('okok');
         firstName.classList.remove('red');
         lastName.classList.remove('red');
         phoneNumber.classList.remove('red');
+        radioMonthly.classList.remove('red');
     }
 
 
@@ -42,12 +37,13 @@ sendButton.addEventListener('click', function () {
         firstName.classList.add('red');
         lastName.classList.add('red');
         phoneNumber.classList.add('red');
+        radioMonthly.classList.add('.red');
         rezultatas.classList.remove('okok');
     }
 
-    firstName.value = '';
-    lastName.value = '';
-    phoneNumber.value = '';
+    // firstName.value = '';
+    // lastName.value = '';
+    // phoneNumber.value = '';
 });
 
 // tab navigation 
