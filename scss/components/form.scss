@@ -179,6 +179,16 @@
             }
         }
     }
+    .required {
+        color: red;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .hidden {
+        display: none;
+    }
 
     .green {
         position: absolute;

@@ -16,35 +16,72 @@ let firstName = document.getElementById('first_name');
 let lastName = document.getElementById('last_name');
 let phoneNumber = document.getElementById('phone_number');
 let radioMonthly = document.getElementById('monthly');
+let radioYearly = document.getElementById('yearly');
 let rezultatas = document.getElementById('first-form');
-
+let errorMessage = document.getElementById('errorMessage');
 
 sendButton.addEventListener('click', function () {
-    console.log(firstName.value);
 
-    if (firstName.value.trim() && lastName.value.trim() && Number(phoneNumber.value) && Boolean(radioMonthly.value = true)) {
-        // console.log(firstName.value);
-        rezultatas.classList.add('okok');
-        firstName.classList.remove('red');
-        lastName.classList.remove('red');
-        phoneNumber.classList.remove('red');
-        radioMonthly.classList.remove('red');
+    if (firstName.value.trim() && lastName.value.trim() && Number(phoneNumber.value) && (radioMonthly.checked || radioYearly.checked) > 0) {
+
+        if (radioMonthly.checked === true) {
+            let subscription = "subscription monthly";
+            errorMessage.classList.add('hidden');
+
+            console.log(firstName.value + ' ' + lastName.value + ' ' + phoneNumber.value + ' ' + subscription);
+            rezultatas.classList.add('okok');
+        }
+
+
+        else {
+            let subscription = "subscription yearly"
+            rezultatas.classList.add('okok');
+            errorMessage.classList.add('hidden');
+        }
     }
 
-
     else {
-        console.log('wrong');
         firstName.classList.add('red');
         lastName.classList.add('red');
         phoneNumber.classList.add('red');
-        radioMonthly.classList.add('.red');
-        rezultatas.classList.remove('okok');
+        radioMonthly.classList.add('red');
+        errorMessage.classList.remove('hidden');
+    }
+});
+
+// contact form 
+
+let btn = document.getElementById('go');
+let first = document.getElementById('first');
+let last = document.getElementById('last');
+let phone = document.getElementById('phone');
+let personal = document.getElementById('personal');
+let company = document.getElementById('company');
+let error = document.getElementById('error');
+
+
+btn.addEventListener('click', function () {
+    if (first.value.trim() && last.value.trim() && Number(phone.value) && (personal.checked || company.checked) > 0) {
+
+        if (personal.checked === true) {
+            let subscribe = "subscription personal";
+            error.classList.add('hidden');
+            //     setTimeout(function () { alert("Please contact me: " + first.value + " " + last.value + ", " + phone.value + ", " + subscribe); }, 1500);
+            // }
+        }
+
+        else {
+            let subscribe = "subscription company"
+            // rezultatas.classList.add('okok');
+            error.classList.add('hidden');
+        }
     }
 
-    // firstName.value = '';
-    // lastName.value = '';
-    // phoneNumber.value = '';
+    else {
+        error.classList.remove('hidden');
+    }
 });
+
 
 // tab navigation 
 
